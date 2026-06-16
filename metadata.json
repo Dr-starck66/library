@@ -1,0 +1,6 @@
+{
+  "name": "LibraryForge AI",
+  "description": "An autonomous multi-agent system that generates full Python libraries from a natural language prompt.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
