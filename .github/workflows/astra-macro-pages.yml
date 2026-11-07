@@ -1,0 +1,47 @@
+name: ASTRA MACRO public research preview (GitHub Pages)
+on:
+  push:
+    branches:
+      - astra/macro-institutional-preview-20261107
+    paths:
+      - 'projects/astra-macro-institutional-preview/**'
+      - '.github/workflows/astra-macro-pages.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: astra-macro-public-pages
+  cancel-in-progress: false
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify public-only artefact and negative disclosure
+        run: |
+          python3 -m unittest -v projects/astra-macro-institutional-preview/test_app.py
+          python3 - <<'PY'
+          import json, pathlib
+          p=pathlib.Path('projects/astra-macro-institutional-preview')
+          a=json.loads((p/'audit_receipt_public.json').read_text())
+          assert a['study']['model_correct']==23
+          assert a['study']['baseline_correct']==27
+          assert a['external_validation']=='UNVERIFIED'
+          assert a['valuation_usd'] is None
+          assert a['study']['pristine_holdout'] is False
+          assert 'ASTRA_PILOT_TOKEN' not in (p/'index.html').read_text()
+          print('STATIC_PUBLIC_DISCLOSURE_PASS')
+          PY
+      - uses: actions/configure-pages@v5
+        with:
+          enablement: true
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: projects/astra-macro-institutional-preview
+      - id: deployment
+        uses: actions/deploy-pages@v4
