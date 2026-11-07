@@ -1,0 +1,35 @@
+{
+  "schema": "astra-macro-prospective-lock-v1",
+  "event": "US CPI October 2026: first published month-on-month changes",
+  "release_at_utc": "2026-11-10T13:30:00Z",
+  "model": "ASTRA_COMPONENTS_NOV06_2026_v1_HEURISTIC",
+  "original_private_source_blob_sha": "7390395339304636e46c5260ccbaec389f1de61b",
+  "original_private_input_snapshot_sha256": "3bba0b5f7811230346248277e4749e941d5a7b29173b1dc74b934ca8d74261c7",
+  "archived_private_source": "Dr-starck66/indexation PR #182 tools/astra-macro-shadow/ASTRA_CPI_20261110_INDEPENDENT_RESULT.json",
+  "forecasts": [
+    {
+      "series_id": "US.CPI.HEADLINE.MOM",
+      "units": "percentage_points_mom",
+      "raw_value": 0.232208,
+      "official_display_precision_1_decimal": 0.2,
+      "official_firstprint": null
+    },
+    {
+      "series_id": "US.CPI.CORE.MOM",
+      "units": "percentage_points_mom",
+      "raw_value": 0.28511,
+      "official_display_precision_1_decimal": 0.3,
+      "official_firstprint": null
+    }
+  ],
+  "consensus_asof_verified": false,
+  "status": "PRE_RELEASE_FREEZE_NOT_INDEPENDENT_VALIDATION",
+  "source_of_timestamp": "GitHub server commit timestamp of this public artifact; raw source authoring time is not independently attested",
+  "caveats": [
+    "Heuristic model; no prospective performance is yet established.",
+    "Two forecasts do not establish a 90% accuracy rate.",
+    "The first published official results have not yet been observed.",
+    "No brokerage orders, payout claims or license to raw restricted data."
+  ],
+  "no_trading": true
+}
