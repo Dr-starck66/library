@@ -1,0 +1,217 @@
+{
+  "schema": "astra-public-catalog-v1",
+  "series": [
+    {
+      "id": "US.NFP.CHANGE",
+      "geography": "US",
+      "family": "Employment",
+      "unit": "k_jobs",
+      "status": "RESEARCH_ONLY"
+    },
+    {
+      "id": "US.UNEMPLOYMENT.RATE",
+      "geography": "US",
+      "family": "Employment",
+      "unit": "pct",
+      "status": "RESEARCH_ONLY"
+    },
+    {
+      "id": "US.WAGES.MOM",
+      "geography": "US",
+      "family": "Employment",
+      "unit": "pct_mom",
+      "status": "RESEARCH_ONLY"
+    },
+    {
+      "id": "US.CPI.HEADLINE.MOM",
+      "geography": "US",
+      "family": "Inflation",
+      "unit": "pct_mom",
+      "status": "RESEARCH_ONLY"
+    },
+    {
+      "id": "US.CPI.CORE.MOM",
+      "geography": "US",
+      "family": "Inflation",
+      "unit": "pct_mom",
+      "status": "RESEARCH_ONLY"
+    },
+    {
+      "id": "US.PPI.HEADLINE.MOM",
+      "geography": "US",
+      "family": "Inflation",
+      "unit": "pct_mom",
+      "status": "RESEARCH_ONLY"
+    },
+    {
+      "id": "US.PCE.CORE.MOM",
+      "geography": "US",
+      "family": "Inflation",
+      "unit": "pct_mom",
+      "status": "RESEARCH_ONLY"
+    },
+    {
+      "id": "US.GDP.REAL.QOQ.SAAR",
+      "geography": "US",
+      "family": "Growth",
+      "unit": "pct_saar",
+      "status": "RESEARCH_ONLY"
+    },
+    {
+      "id": "US.RETAIL.SALES.MOM",
+      "geography": "US",
+      "family": "Demand",
+      "unit": "pct_mom",
+      "status": "RESEARCH_ONLY"
+    },
+    {
+      "id": "US.JOLTS.OPENINGS",
+      "geography": "US",
+      "family": "Employment",
+      "unit": "million",
+      "status": "RESEARCH_ONLY"
+    },
+    {
+      "id": "US.CLAIMS.WEEKLY",
+      "geography": "US",
+      "family": "Employment",
+      "unit": "k_claims",
+      "status": "RESEARCH_ONLY"
+    },
+    {
+      "id": "US.ISM.MFG.PMI",
+      "geography": "US",
+      "family": "Activity",
+      "unit": "index",
+      "status": "RESEARCH_ONLY"
+    },
+    {
+      "id": "US.ISM.SERVICES.PMI",
+      "geography": "US",
+      "family": "Activity",
+      "unit": "index",
+      "status": "RESEARCH_ONLY"
+    },
+    {
+      "id": "US.FED.POLICY.UPPER",
+      "geography": "US",
+      "family": "Policy",
+      "unit": "pct",
+      "status": "RESEARCH_ONLY"
+    },
+    {
+      "id": "EA.HICP.HEADLINE.YOY",
+      "geography": "EA",
+      "family": "Inflation",
+      "unit": "pct_yoy",
+      "status": "RESEARCH_ONLY"
+    },
+    {
+      "id": "EA.HICP.CORE.YOY",
+      "geography": "EA",
+      "family": "Inflation",
+      "unit": "pct_yoy",
+      "status": "RESEARCH_ONLY"
+    },
+    {
+      "id": "EA.GDP.REAL.QOQ",
+      "geography": "EA",
+      "family": "Growth",
+      "unit": "pct_qoq",
+      "status": "RESEARCH_ONLY"
+    },
+    {
+      "id": "EA.UNEMPLOYMENT.RATE",
+      "geography": "EA",
+      "family": "Employment",
+      "unit": "pct",
+      "status": "RESEARCH_ONLY"
+    },
+    {
+      "id": "EA.ECB.DEPOSIT.RATE",
+      "geography": "EA",
+      "family": "Policy",
+      "unit": "pct",
+      "status": "RESEARCH_ONLY"
+    },
+    {
+      "id": "GB.CPI.YOY",
+      "geography": "GB",
+      "family": "Inflation",
+      "unit": "pct_yoy",
+      "status": "RESEARCH_ONLY"
+    },
+    {
+      "id": "GB.GDP.MOM",
+      "geography": "GB",
+      "family": "Growth",
+      "unit": "pct_mom",
+      "status": "RESEARCH_ONLY"
+    },
+    {
+      "id": "GB.EMPLOYMENT.CHANGE",
+      "geography": "GB",
+      "family": "Employment",
+      "unit": "k_jobs",
+      "status": "RESEARCH_ONLY"
+    },
+    {
+      "id": "GB.BOE.BANK.RATE",
+      "geography": "GB",
+      "family": "Policy",
+      "unit": "pct",
+      "status": "RESEARCH_ONLY"
+    },
+    {
+      "id": "JP.CPI.YOY",
+      "geography": "JP",
+      "family": "Inflation",
+      "unit": "pct_yoy",
+      "status": "RESEARCH_ONLY"
+    },
+    {
+      "id": "JP.BOJ.POLICY.RATE",
+      "geography": "JP",
+      "family": "Policy",
+      "unit": "pct",
+      "status": "RESEARCH_ONLY"
+    },
+    {
+      "id": "CH.CPI.YOY",
+      "geography": "CH",
+      "family": "Inflation",
+      "unit": "pct_yoy",
+      "status": "RESEARCH_ONLY"
+    },
+    {
+      "id": "CH.SNB.POLICY.RATE",
+      "geography": "CH",
+      "family": "Policy",
+      "unit": "pct",
+      "status": "RESEARCH_ONLY"
+    },
+    {
+      "id": "CA.EMPLOYMENT.CHANGE",
+      "geography": "CA",
+      "family": "Employment",
+      "unit": "k_jobs",
+      "status": "RESEARCH_ONLY"
+    },
+    {
+      "id": "CA.BOC.POLICY.RATE",
+      "geography": "CA",
+      "family": "Policy",
+      "unit": "pct",
+      "status": "RESEARCH_ONLY"
+    },
+    {
+      "id": "AU.RBA.CASH_RATE",
+      "geography": "AU",
+      "family": "Policy",
+      "unit": "pct",
+      "status": "RESEARCH_ONLY"
+    }
+  ],
+  "data_rights": "PUBLIC_METADATA_ONLY",
+  "source_git_blob_sha": "4dfc2e1d73faaf3d6b8e5ac31a50300af221e6f3"
+}
