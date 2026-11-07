@@ -1,0 +1,25 @@
+{
+  "schema": "astra-public-audit-v1",
+  "created": "2026-11-07",
+  "metric_scope": "EXPLORATORY_RESEARCH",
+  "study": {
+    "observations": 38,
+    "model_correct": 23,
+    "baseline_correct": 27,
+    "model_accuracy": 0.605263,
+    "baseline_accuracy": 0.710526,
+    "start": "2022-01",
+    "end": "2025-04",
+    "pristine_holdout": false,
+    "forecast_consensus_asof_verified": false,
+    "note": "Retrospective repeatedly explored data; not pristine and not an audited live track record."
+  },
+  "scientific_status": "FAIL_MODEL_BEATS_BASELINE",
+  "external_validation": "UNVERIFIED",
+  "live_prediction_service": "NOT_DEPLOYED",
+  "valuation_usd": null,
+  "data_license_commercial_reuse": "UNVERIFIED",
+  "confidential_raw_rows_exposed": false,
+  "source_of_research": "Dr-starck66/indexation PR #182; private source and raw data not redistributed",
+  "no_trading": true
+}
