@@ -24,7 +24,7 @@ jobs:
       - uses: actions/checkout@v4
       - name: Verify public-only artefact and negative disclosure
         run: |
-          python3 -m unittest -v projects/astra-macro-institutional-preview/test_app.py
+          (cd projects/astra-macro-institutional-preview && python3 -m unittest -v test_app.py)
           python3 - <<'PY'
           import json, pathlib
           p=pathlib.Path('projects/astra-macro-institutional-preview')
