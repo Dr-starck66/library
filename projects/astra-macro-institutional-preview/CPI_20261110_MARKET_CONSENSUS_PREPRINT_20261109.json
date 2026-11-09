@@ -1,0 +1,63 @@
+{
+  "schema": "astra-macro-preprint-consensus-v1",
+  "purpose": "Historical time-stamped public snapshot of reported consensus, separate from original ASTRA model commitments",
+  "release": {
+    "publisher": "BLS",
+    "name": "Consumer Price Index October 2026",
+    "scheduled_at_utc": "2026-11-10T13:30:00Z",
+    "official_schedule": "https://www.bls.gov/schedule/2026/11_sched_list.htm"
+  },
+  "original_astra_forecast": {
+    "headline_cpi_mom_pct": 0.2,
+    "core_cpi_mom_pct": 0.3,
+    "original_model_lock_commit": "3f0c05147bd9ae27937df4e63deec1a16231f166",
+    "note": "Original forecasts remain immutable and are not overwritten by this consensus snapshot."
+  },
+  "independent_market_reference": {
+    "headline_cpi_mom_pct": 0.3,
+    "core_cpi_mom_pct": 0.2,
+    "scope": "Publicly reported financial-media consensus as seen Nov 9, 2026, not direct licensed Bloomberg consensus feed",
+    "reported_on": "2026-11-09",
+    "sources": [
+      {
+        "name": "Trading Economics Inflation Calendar",
+        "url": "https://tradingeconomics.com/calendar/inflation",
+        "headline": 0.3,
+        "core": 0.2,
+        "note": "Dynamic calendar; current view can change after release; this Git record captures the numbers seen before release."
+      },
+      {
+        "name": "Rosenberg Research public Week Ahead",
+        "url": "https://app.rosenbergresearch.com/dashboard/publication-details/08df3c3d-596a-4579-8d44-8b93d084b816",
+        "headline": 0.3,
+        "core": 0.2,
+        "note": "Public summary published Nov 6, 2026."
+      },
+      {
+        "name": "MarketWatch US CPI preview",
+        "url": "https://www.marketwatch.com/story/hot-u-s-inflation-hasnt-cooled-off-rising-consumer-prices-to-keep-fed-rate-hike-on-track-926c44b0",
+        "headline": 0.3,
+        "core": 0.2,
+        "note": "Article timestamp Nov 9, 2026 13:16 ET."
+      }
+    ]
+  },
+  "negative_control": {
+    "year_on_year_comparison": "UNAVAILABLE_DUE_TO_OCT_2025_SHUTDOWN",
+    "source": "https://www.bls.gov/news.release/cpi.toc.htm",
+    "note": "Do not score October 2026 YoY rates when BLS has no comparable October 2025 index."
+  },
+  "outcome": {
+    "official_headline_cpi_mom_pct": null,
+    "official_core_cpi_mom_pct": null,
+    "official_firstprint_url": null,
+    "verification_status": "PRE_RELEASE_UNSETTLED"
+  },
+  "integrity": {
+    "proof_of_time": "GitHub server commit timestamp and content hash after file creation; local date is metadata only",
+    "copyright": "Values and links only, no third-party full text reproduced",
+    "trading": "DISABLED",
+    "independent_scientific_validation": "NOT_ATTAINED",
+    "model_accuracy_90pct": "NOT_ATTAINED"
+  }
+}
